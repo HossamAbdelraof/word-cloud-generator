@@ -59,5 +59,25 @@ def reshape_arabic(text_file):
     return te
 ```
 
+after thar the text is ready to became word cloud
+
+```python
+wordcloud = WordCloud(width = 1080, height = 1080,
+                background_color ='white',
+                stopwords = set(STOPWORDS),
+                font_path='<font_path>.ttf',
+                min_font_size = 8,
+                collocations=False=False).generate(text)
+
+wordcloud.to_file("<saving_path>.png")
+```
+*the word cloud parameters is:
+ > width        :   "the image width" \<int\>
+ > height       :   "the image height" \<int\>
+ > stopwords    :   "set(Stopword) from librari" \<set\>
+ > font_path    :   "the path to teh font file" \<path to .ttf file\>
+ > min_font_size:   "the minmum font in the image" \<int\>
+ > collocations :   "Default us True,it douple every word in the data" \<boolean\>
+
 
   
