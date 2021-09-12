@@ -73,10 +73,15 @@ wordcloud.to_file("<saving_path>.png")
 ```
 *the word cloud parameters is:
  > width        :   "the image width" \<int\>
+ 
  > height       :   "the image height" \<int\>
+ 
  > stopwords    :   "set(Stopword) from librari" \<set\>
+ 
  > font_path    :   "the path to teh font file" \<path to .ttf file\>
+ 
  > min_font_size:   "the minmum font in the image" \<int\>
+ 
  > collocations :   "Default us True,it douple every word in the data" \<boolean\>
 
 
