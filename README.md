@@ -67,7 +67,7 @@ wordcloud = WordCloud(width = 1080, height = 1080,
                 stopwords = set(STOPWORDS),
                 font_path='<font_path>.ttf',
                 min_font_size = 8,
-                collocations=False=False).generate(text)
+                collocations=False).generate(text)
 
 wordcloud.to_file("<saving_path>.png")
 ```
