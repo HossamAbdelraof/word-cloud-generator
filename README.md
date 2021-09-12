@@ -84,5 +84,13 @@ wordcloud.to_file("<saving_path>.png")
  
  > collocations :   "Default us True,it douple every word in the data" \<boolean\>
 
-
-  
+if you want to show teh image in your IDE you canuse matplotlib 
+```python
+# plot the WordCloud image                      
+plt.figure(figsize = (8, 8), facecolor = None)
+plt.imshow(wordcloud)
+plt.axis("off")
+plt.tight_layout(pad = 0)
+ 
+plt.show() 
+  ```
